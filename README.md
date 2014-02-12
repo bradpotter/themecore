@@ -23,4 +23,6 @@ Add front-page selector
 
 Setup and test with Theme Customizer plugin
 
+Make a difference
+
 
