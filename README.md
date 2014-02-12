@@ -17,6 +17,10 @@ Add additional widget areas (sidebars)
 
 Add page templates
 
-Add front-page selector 
+Create a few front-page layout samples
+
+Add front-page selector
+
+Setup and test with Theme Customizer plugin
 
 
