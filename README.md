@@ -11,6 +11,7 @@ Make menus mobile responsive
 Add additional layouts
 Add additional widget areas (sidebars)
 Add page templates
+
 Add front-page selector 
 
 
