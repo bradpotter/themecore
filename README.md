@@ -9,7 +9,7 @@ Demo link: http://themecore.com
 
 === GITHUB ===
 
-Github project link: https://github.com/bradpotter/developer-theme
+Github project link: https://github.com/bradpotter/themecore
 
 === GOALS ===
 
