@@ -972,11 +972,11 @@ Site Navigation
 --------------------------------------------- */
 
 .site-header .genesis-nav-menu a:hover {
-	color: #eee;
+	color: #fff;
 }
 
 .site-header .genesis-nav-menu .current-menu-item > a {
-	color: #eee;
+	color: #fff;
 }
 
 .site-header .sub-menu {
@@ -984,6 +984,10 @@ Site Navigation
 }
 
 .site-header .sub-menu a:hover {
+	color: #333;
+}
+
+.site-header .sub-menu .current-menu-item > a {
 	color: #333;
 }
 
