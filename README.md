@@ -3,6 +3,14 @@ ThemeCore
 
 Starter theme for the Genesis Framework
 
+=== DEMO ===
+
+Demo link: http://themecore.com
+
+=== GITHUB ===
+
+Github project link: https://github.com/bradpotter/developer-theme
+
 === GOALS ===
 
 Style navigation menus
