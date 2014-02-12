@@ -772,7 +772,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #2a2a2a;
 }
 
 .site-header .wrap {
@@ -785,7 +785,7 @@ Site Header
 .title-area {
 	float: left;
 	font-family: Lato, sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	padding: 16px 0;
 	width: 320px;
 }
@@ -795,19 +795,20 @@ Site Header
 }
 
 .site-title {
-	font-size: 28px;
+	font-size: 38px;
+	font-weight: 500;
 	line-height: 1;
-	margin: 0 0 8px;
+	margin: 0 0 10px;
 	text-transform: uppercase;
 }
 
 .site-title a,
 .site-title a:hover {
-	color: #333;
+	color: #fff;
 }
 
 .site-description {
-	color: #999;
+	color: #777;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1;
@@ -970,8 +971,20 @@ Site Navigation
 /* Site Header Navigation
 --------------------------------------------- */
 
+.site-header .genesis-nav-menu a:hover {
+	color: #eee;
+}
+
+.site-header .genesis-nav-menu .current-menu-item > a {
+	color: #eee;
+}
+
 .site-header .sub-menu {
 	border-top: 1px solid #eee;
+}
+
+.site-header .sub-menu a:hover {
+	color: #333;
 }
 
 .site-header .sub-menu .sub-menu {
@@ -1292,7 +1305,7 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
+	background-color: #2a2a2a;
 	color: #999;
 	font-size: 14px;
 	padding: 40px 0;
