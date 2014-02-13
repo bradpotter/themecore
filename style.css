@@ -923,11 +923,11 @@ Site Navigation
 	font-size: 14px;
 	padding: 16px 20px;
 	position: relative;
-	width: 200px;
+	width: 230px;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
-	margin: -54px 0 0 199px;
+	margin: -54px 0 0 229px;
 }
 
 .genesis-nav-menu .menu-item:hover {
@@ -1337,7 +1337,7 @@ Media Queries
 
 }
 
-@media only screen and (max-width: 1139px) {
+@media only screen and (max-width: 1159px) {
 
 	.site-inner,
 	.wrap {
