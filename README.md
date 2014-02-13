@@ -28,6 +28,8 @@ Github project link: https://github.com/bradpotter/themecore
 
 8. Setup and test with Theme Customizer plugin
 
+## Mission
+
 Make sure free and/or low cost quality products are available for the Genesis Community
 
 
