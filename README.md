@@ -1,36 +1,33 @@
-ThemeCore
-=========
+# ThemeCore
 
 Starter theme for the Genesis Framework
 
-=== DEMO ===
+## DEMO
 
 Demo link: http://themecore.com
 
-=== GITHUB ===
+## GITHUB
 
 Github project link: https://github.com/bradpotter/themecore
 
-=== GOALS ===
+## GOALS
 
-Style navigation menus
+1. Add additional layouts (Being added via Layout Options Plugin)
 
-Add additional navigation menu
+2. Add additional navigation menu
 
-Make menus mobile responsive
+3. Style navigation menus and make menus mobile responsive
 
-Add additional layouts
+4. Add additional widget areas (sidebars)
 
-Add additional widget areas (sidebars)
+5. Add page templates
 
-Add page templates
+6. Create a few front-page layout samples
 
-Create a few front-page layout samples
+7. Add front-page selector
 
-Add front-page selector
+8. Setup and test with Theme Customizer plugin
 
-Setup and test with Theme Customizer plugin
-
-Make a difference
+Make sure free and/or low cost quality products are available for the Genesis Community
 
 
