@@ -2,15 +2,15 @@
 
 Starter theme for the Genesis Framework
 
-## DEMO
+## Demo
 
 Demo link: http://themecore.com
 
-## GITHUB
+## GitHub
 
 Github project link: https://github.com/bradpotter/themecore
 
-## GOALS
+## Goals
 
 1. Add additional layouts (Being added via Layout Options Plugin)
 
