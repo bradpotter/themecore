@@ -30,4 +30,4 @@ Github project link: https://github.com/bradpotter/themecore
 
 ## Mission
 
-Make sure free and/or low cost quality products are available for the Genesis Community
+Provide free and/or low cost quality products for the Genesis Community
