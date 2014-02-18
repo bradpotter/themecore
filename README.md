@@ -12,7 +12,7 @@ Github project link: https://github.com/bradpotter/themecore
 
 ## Goals
 
-1. Add additional layouts (Being added via Layout Options Plugin)
+1. Add additional layouts (Being added via Genesis Layout Options Plugin)
 
 2. Add additional navigation menu
 
