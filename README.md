@@ -27,6 +27,13 @@ Github project link: https://github.com/bradpotter/themecore
 7. Add front-page selector
 
 8. Setup and test with Theme Customizer plugin
+<<<<<<< HEAD
+=======
+
+## Mission
+
+Make sure free and/or low cost quality products are available for the Genesis Community
+>>>>>>> fba996a9d444169a60809f194711e44f70eabe0a
 
 ## Mission
 
