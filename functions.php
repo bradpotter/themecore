@@ -24,3 +24,17 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+// Enqueue responsive menu Javascript
+add_action( 'wp_enqueue_scripts', 'themecore_enqueue_scripts' );
+function themecore_enqueue_scripts() {
+	
+	wp_enqueue_script( 'themecore-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_style( 'themecore-responsive-menu-style', get_stylesheet_directory_uri() . '/css/responsive-menu.css', array(), '1.0.0' );
+	wp_enqueue_style( 'dashicons' );
+}
+
+//* Add new image sizes
+add_image_size( 'Slider-Large', 1080, 652, TRUE );
+add_image_size( 'Slider-Medium', 680, 410, TRUE );
+add_image_size( 'Slider-Small', 280, 169, TRUE );

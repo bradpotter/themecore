@@ -1,0 +1,356 @@
+/* Desktop Navigation
+--------------------------------------------- */
+
+nav {
+	clear: both;
+}
+
+
+/* Navigation Toggles
+--------------------------------------------- */
+
+.menu-toggle,
+.sub-menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
+
+/* Navigation Toggles (Media Queries)
+--------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+	nav {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	
+	/* Menu Toggle Defaults
+	----------------------------------------- */
+	
+	.menu-toggle {
+		width: 100%!important;
+	}
+	
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: block;
+		font-size: 20px;
+		line-height: 1;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 22px 24px 22px 24px;
+		text-align: center;
+		visibility: visible;
+	}
+	
+	.sub-menu-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.sub-menu .sub-menu-toggle {
+		padding: 21px 24px 21px 24px;
+	}
+	
+	button.menu-toggle,
+	button.sub-menu-toggle {
+		background-color: transparent;
+	}
+
+	.menu-toggle:before {
+		content: "\f333";
+		display: inline-block;
+		font-family: 'dashicons';
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 1;
+		margin: 0;
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.menu-toggle.activated:before {
+		content: "\f343";
+	}
+	
+	
+	/* Header Menu Toggle Styles
+	----------------------------------------- */
+	
+	.menu-toggle.header-toggle {
+		background-color: #fff;
+		border-bottom: 1px solid #eee;
+		border-top: 1px solid #eee;
+		color: #999;
+	}
+	
+	.menu-toggle.header-toggle:hover {
+		background-color: #fafafa;
+		color: #666;
+	}
+	
+	
+	/* Primary Menu Toggle Styles
+	----------------------------------------- */
+	
+	.menu-toggle.primary-toggle {
+		background-color: #333;
+		border-bottom: 1px solid #444;
+		color: #999;
+	}
+	
+	.menu-toggle.primary-toggle:hover {
+		background-color: #3a3a3a;
+		color: #fff;
+	}
+	
+	
+	/* Secondary Menu Toggle Styles
+	----------------------------------------- */
+	
+	.menu-toggle.secondary-toggle {
+		background-color: #fff;
+		border-bottom: 1px solid #eee;
+		color: #999;
+	}
+	
+	.menu-toggle.secondary-toggle:hover {
+		background-color: #fafafa;
+		color: #666;
+	}
+	
+
+	/* Sub Menu Toggle Defaults
+	----------------------------------------- */
+	
+	.sub-menu-toggle:before {
+		color: #aaa;
+		content: "\f347";
+		display: inline-block;
+		font-family: 'dashicons';
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1;
+		margin: 0;
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.sub-menu-toggle.activated:before {
+		color: #666;
+	}
+	
+	
+	/* Header Sub Menu Toggle Styles
+	----------------------------------------- */
+	
+	.nav-header .sub-menu-toggle {
+		background-color: #fafafa;
+	}
+	
+	.nav-header .sub-menu-toggle:hover {
+		background-color: #eee;
+	}
+	
+	.nav-header .sub-menu-toggle:before {
+		color: #aaa;
+	}
+	
+	.nav-header .sub-menu-toggle:hover:before {
+		color: #666;
+	}
+	
+	.nav-header .sub-menu-toggle.activated:before {
+		color: #666;
+	}
+	
+	
+	/* Primary Sub Menu Toggle Styles
+	----------------------------------------- */
+	
+	.nav-primary .sub-menu-toggle {
+		background-color: #3a3a3a;
+	}
+	
+	.nav-primary .sub-menu-toggle:hover {
+		background-color: #444;
+	}
+	
+	.nav-primary .sub-menu-toggle:before {
+		color: #666;
+	}
+		
+	.nav-primary .sub-menu-toggle:hover:before {
+		color: #fff;
+	}
+	
+	.nav-primary .sub-menu-toggle.activated:before {
+		color: #eee;
+	}
+	
+	
+	/* Secondary Sub Menu Toggle Styles
+	----------------------------------------- */
+	
+	.nav-secondary .sub-menu-toggle {
+		background-color: #fafafa;
+	}
+	
+	.nav-secondary .sub-menu-toggle:hover {
+		background-color: #eee;
+	}
+	
+	.nav-secondary .sub-menu-toggle:before {
+		color: #aaa;
+	}
+	
+	.nav-secondary .sub-menu-toggle:hover:before {
+		color: #666;
+	}
+	
+	.nav-secondary .sub-menu-toggle.activated:before {
+		color: #666;
+	}
+	
+	
+	/* Navigation Defaults
+	----------------------------------------- */
+	
+	nav {
+		display: none;
+		position: relative;
+	}
+
+	.genesis-nav-menu .menu-item {
+		display: block;
+		position: relative;
+		text-align: left;
+	}
+
+	.genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+
+	.genesis-nav-menu a {
+		line-height: 1;
+	}
+
+	.genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		opacity: 1;
+		position: static;
+		width: 100%;
+	}
+
+	.genesis-nav-menu .sub-menu a {
+		border-left: 0;
+		padding: 24px;
+		position: relative;
+		width: auto;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu a {
+		padding-left: 30px;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu .sub-menu a {
+		padding-left: 40px;
+	}
+	
+	
+	/* Header Navigation Styles
+	----------------------------------------- */
+	
+	.site-header .genesis-nav-menu a:hover {
+		background-color: #fafafa;
+		color: #333;
+	}
+	
+	.site-header .sub-menu,
+	.site-header .sub-menu a {
+		border: 0;
+	}
+	
+	.site-header .genesis-nav-menu a {
+		border-bottom: 1px solid #eee;
+	}
+	
+	.site-header .sub-menu a {
+		background-color: #fbfbfb;
+		border-bottom: 1px solid #eee;
+	}
+	
+	.site-header a:hover,
+	.site-header .current-menu-item > a {
+		color: ;
+	}
+	
+	
+	/* Primary Navigation Styles
+	----------------------------------------- */
+	
+	.nav-primary a:hover {
+		background-color: #444;
+		color: #fff;
+	}
+	
+	.nav-primary .sub-menu,
+	.nav-primary .sub-menu a {
+		border: 0;
+	}
+	
+	.nav-primary a {
+		border-bottom: 1px solid #444;
+	}
+	
+	.nav-primary .sub-menu a {
+		background-color: #383838;
+		border-bottom: 1px solid #444;
+	}
+	
+	.nav-primary a:hover,
+	.nav-primary .current-menu-item > a {
+		color: ;
+	}
+	
+	
+	/* Secondary Navigation Styles
+	----------------------------------------- */
+	
+	.nav-secondary a:hover {
+		background-color: #fafafa;
+		color: #333;
+	}
+	
+	.nav-secondary .sub-menu,
+	.nav-secondary .sub-menu a {
+		border: 0;
+	}
+
+	.nav-secondary a {
+		border-bottom: 1px solid #eee;
+	}
+	
+	.nav-secondary .sub-menu a {
+		background-color: #fbfbfb;
+		border-bottom: 1px solid #eee;
+	}
+	
+	.nav-secondary a:hover,
+	.nav-secondary .current-menu-item > a {
+		color: ;
+	}
+	
+
+}
