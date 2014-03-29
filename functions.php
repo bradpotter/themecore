@@ -25,7 +25,7 @@ add_theme_support( 'custom-background' );
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-// Enqueue responsive menu Javascript
+//* Enqueue responsive menu Javascript
 add_action( 'wp_enqueue_scripts', 'themecore_enqueue_scripts' );
 function themecore_enqueue_scripts() {
 	
@@ -38,6 +38,13 @@ function themecore_enqueue_scripts() {
 add_image_size( 'Slider-Large', 1080, 652, TRUE );
 add_image_size( 'Slider-Medium', 680, 410, TRUE );
 add_image_size( 'Slider-Small', 280, 169, TRUE );
+
+//* Customize the entry meta in the entry header
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter($post_info) {
+	$post_info = '[post_date] [post_author_posts_link] [post_comments] [post_edit]';
+	return $post_info;
+}
 
 //* Include before content widgets
 require_once( CHILD_DIR . '/lib/before-content-widgets.php' );
