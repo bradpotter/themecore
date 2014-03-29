@@ -38,3 +38,15 @@ function themecore_enqueue_scripts() {
 add_image_size( 'Slider-Large', 1080, 652, TRUE );
 add_image_size( 'Slider-Medium', 680, 410, TRUE );
 add_image_size( 'Slider-Small', 280, 169, TRUE );
+
+//* Include before content widgets
+require_once( CHILD_DIR . '/lib/before-content-widgets.php' );
+
+//* Add support for before content widgets
+add_theme_support( 'genesis-before-content-widgets', 2 );
+
+//* Include after content widgets
+require_once( CHILD_DIR . '/lib/after-content-widgets.php' );
+
+//* Add support for after content widgets
+add_theme_support( 'genesis-after-content-widgets', 2 );
