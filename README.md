@@ -18,7 +18,7 @@ Github project link: https://github.com/bradpotter/themecore
 
 3. Style navigation menus and make menus mobile responsive - DONE
 
-4. Add additional widget areas (sidebars) - DONE
+4. Add additional before and after content widget areas (sidebars) - DONE
 
 5. Add page templates
 
