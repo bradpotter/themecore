@@ -28,6 +28,8 @@ Github project link: https://github.com/bradpotter/themecore
 
 8. Setup and test with Theme Customizer plugin
 
+9. Add landing page examples 
+
 ## Mission
 
 Provide free and/or low cost quality products for the Genesis Community
