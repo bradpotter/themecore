@@ -395,6 +395,18 @@ Structure and Layout
 	padding-top: 40px;
 }
 
+.themecore-landing .site-inner {
+	background-color: #fff;
+	border-radius: 3px;
+	margin: 80px auto;
+	max-width: 960px;
+	padding: 40px;
+}
+
+.themecore-landing .entry-title {
+	margin-bottom: 80px;
+}
+
 /* Column Widths and Positions
 --------------------------------------------- */
 
