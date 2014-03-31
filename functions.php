@@ -7,12 +7,6 @@ define( 'CHILD_THEME_NAME', 'ThemeCore' );
 define( 'CHILD_THEME_URL', 'http://www.themecore.com/' );
 define( 'CHILD_THEME_VERSION', '2.0.2' );
 
-//* Enqueue Google fonts
-add_action( 'wp_enqueue_scripts', 'themecore_google_fonts' );
-function themecore_google_fonts() {
-	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), CHILD_THEME_VERSION );
-}
-
 //* Add HTML5 markup structure
 add_theme_support( 'html5' );
 
@@ -25,12 +19,17 @@ add_theme_support( 'custom-background' );
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-//* Enqueue responsive menu Javascript
+//* Enqueue Javascript files
 add_action( 'wp_enqueue_scripts', 'themecore_enqueue_scripts' );
 function themecore_enqueue_scripts() {
-	
-	wp_enqueue_script( 'themecore-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_style( 'themecore-responsive-menu-style', get_stylesheet_directory_uri() . '/css/responsive-menu.css', array(), '1.0.0' );
+	wp_enqueue_script( 'themecore-responsive-menu', get_stylesheet_directory_uri() . '/assets/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
+}
+
+//* Enqueue CSS files
+add_action( 'wp_enqueue_scripts', 'themecore_enqueue_styles' );
+function themecore_enqueue_styles() {
+	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'themecore-responsive-menu-style', get_stylesheet_directory_uri() . '/assets/css/responsive-menu.css', array(), '1.0.0' );
 	wp_enqueue_style( 'dashicons' );
 }
 
@@ -40,20 +39,20 @@ add_image_size( 'Slider-Medium', 680, 410, TRUE );
 add_image_size( 'Slider-Small', 280, 169, TRUE );
 
 //* Customize the entry meta in the entry header
-add_filter( 'genesis_post_info', 'sp_post_info_filter' );
-function sp_post_info_filter($post_info) {
+add_filter( 'genesis_post_info', 'themecore_post_info_filter' );
+function themecore_post_info_filter($post_info) {
 	$post_info = '[post_date] [post_author_posts_link] [post_comments] [post_edit]';
 	return $post_info;
 }
 
 //* Include before content widgets
-require_once( CHILD_DIR . '/lib/before-content-widgets.php' );
+require_once( CHILD_DIR . '/includes/before-content-widgets.php' );
 
 //* Add support for before content widgets
 add_theme_support( 'genesis-before-content-widgets', 2 );
 
 //* Include after content widgets
-require_once( CHILD_DIR . '/lib/after-content-widgets.php' );
+require_once( CHILD_DIR . '/includes/after-content-widgets.php' );
 
 //* Add support for after content widgets
 add_theme_support( 'genesis-after-content-widgets', 2 );
