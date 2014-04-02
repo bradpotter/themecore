@@ -14,7 +14,7 @@ Github project link: https://github.com/bradpotter/themecore
 
 1. Add additional layouts (Added via [Genesis Layout Options](https://github.com/bradpotter/genesis-layout-options) Plugin) - DONE
 
-2. Add Tertiary navigation menu
+2. Add Tertiary navigation menu - DONE
 
 3. Style navigation menus and make menus mobile responsive - DONE
 
