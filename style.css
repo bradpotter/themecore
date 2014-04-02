@@ -1131,6 +1131,49 @@ Site Navigation
 	color: #333;
 }
 
+/* Tertiary Navigation
+--------------------------------------------- */
+
+.nav-tertiary {
+	background-color: #222;
+}
+
+.nav-tertiary a {
+	color: #999;
+}
+
+.nav-tertiary a:hover {
+	color: #fff;
+}
+
+.nav-tertiary .current-menu-item > a {
+	color: #fff;
+}
+
+.nav-tertiary .current-menu-item > a:hover {
+	color: #fff;
+}
+
+.nav-tertiary .sub-menu a {
+	background-color: #333;
+	border: 1px solid #444;
+	border-top: none;
+	color: #999;
+}
+
+.nav-tertiary .sub-menu a:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+.nav-tertiary .sub-menu .current-menu-item > a {
+	color: #fff;
+}
+
+.nav-tertiary .sub-menu .current-menu-item > a:hover {
+	color: #fff;
+}
+
 
 /*
 Content Area

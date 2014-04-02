@@ -126,6 +126,21 @@ nav {
 	}
 	
 
+	/* Tertiary Menu Toggle Styles
+	----------------------------------------- */
+	
+	.menu-toggle.tertiary-toggle {
+		background-color: #222;
+		border-bottom: 1px solid #333;
+		color: #999;
+	}
+	
+	.menu-toggle.tertiary-toggle:hover {
+		background-color: #3a3a3a;
+		color: #fff;
+	}
+
+	
 	/* Sub Menu Toggle Defaults
 	----------------------------------------- */
 	
@@ -219,6 +234,30 @@ nav {
 	}
 	
 	
+	/* Tertiary Sub Menu Toggle Styles
+	----------------------------------------- */
+	
+	.nav-tertiary .sub-menu-toggle {
+		background-color: #3a3a3a;
+	}
+	
+	.nav-tertiary .sub-menu-toggle:hover {
+		background-color: #444;
+	}
+	
+	.nav-tertiary .sub-menu-toggle:before {
+		color: #666;
+	}
+		
+	.nav-tertiary .sub-menu-toggle:hover:before {
+		color: #fff;
+	}
+	
+	.nav-tertiary .sub-menu-toggle.activated:before {
+		color: #eee;
+	}
+
+	
 	/* Navigation Defaults
 	----------------------------------------- */
 	
@@ -291,7 +330,6 @@ nav {
 		border-bottom: 1px solid #eee;
 	}
 	
-	.site-header a:hover,
 	.site-header .current-menu-item > a {
 		color: ;
 	}
@@ -319,7 +357,6 @@ nav {
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-primary a:hover,
 	.nav-primary .current-menu-item > a {
 		color: ;
 	}
@@ -347,10 +384,35 @@ nav {
 		border-bottom: 1px solid #eee;
 	}
 	
-	.nav-secondary a:hover,
 	.nav-secondary .current-menu-item > a {
 		color: ;
 	}
+
 	
+	/* Tertiary Navigation Styles
+	----------------------------------------- */
+	
+	.nav-tertiary a:hover {
+		background-color: #444;
+		color: #fff;
+	}
+	
+	.nav-tertiary .sub-menu,
+	.nav-tertiary .sub-menu a {
+		border: 0;
+	}
+	
+	.nav-tertiary a {
+		border-bottom: 1px solid #333;
+	}
+	
+	.nav-tertiary .sub-menu a {
+		background-color: #383838;
+		border-bottom: 1px solid #444;
+	}
+	
+	.nav-tertiary .current-menu-item > a {
+		color: ;
+	}	
 
 }

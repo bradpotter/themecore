@@ -45,14 +45,22 @@ function themecore_post_info_filter($post_info) {
 	return $post_info;
 }
 
-//* Include before content widgets
+//* Include and add support for before content widgets
 require_once( CHILD_DIR . '/includes/before-content-widgets.php' );
-
-//* Add support for before content widgets
 add_theme_support( 'genesis-before-content-widgets', 2 );
 
-//* Include after content widgets
+//* Include and add support for after content widgets
 require_once( CHILD_DIR . '/includes/after-content-widgets.php' );
-
-//* Add support for after content widgets
 add_theme_support( 'genesis-after-content-widgets', 2 );
+
+//* Include and hook tertiary navigation menu
+require_once( CHILD_DIR . '/includes/tertiary-navigation-menu.php' );
+add_action( 'genesis_before_footer', 'genesis_do_subnavtwo' );
+
+// Register Genesis Menus
+add_theme_support( 'genesis-menus', array( 'primary'   => __( 'Primary Navigation Menu', 'genesis' ), 'secondary' => __( 'Secondary Navigation Menu', 'genesis' ), 'tertiary' => __( 'Tertiary Navigation Menu', 'genesis' ), ) );
+
+
+
+
+
