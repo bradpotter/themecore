@@ -59,8 +59,3 @@ add_action( 'genesis_before_footer', 'genesis_do_subnavtwo' );
 
 // Register Genesis Menus
 add_theme_support( 'genesis-menus', array( 'primary'   => __( 'Primary Navigation Menu', 'genesis' ), 'secondary' => __( 'Secondary Navigation Menu', 'genesis' ), 'tertiary' => __( 'Tertiary Navigation Menu', 'genesis' ), ) );
-
-
-
-
-
