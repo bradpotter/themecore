@@ -331,7 +331,7 @@ nav {
 	}
 	
 	.site-header .current-menu-item > a {
-		color: ;
+		color: #333;
 	}
 	
 	
@@ -358,7 +358,7 @@ nav {
 	}
 	
 	.nav-primary .current-menu-item > a {
-		color: ;
+		color: #fff;
 	}
 	
 	
@@ -385,7 +385,7 @@ nav {
 	}
 	
 	.nav-secondary .current-menu-item > a {
-		color: ;
+		color: #333;
 	}
 
 	
@@ -412,7 +412,7 @@ nav {
 	}
 	
 	.nav-tertiary .current-menu-item > a {
-		color: ;
+		color: #fff;
 	}	
 
 }
