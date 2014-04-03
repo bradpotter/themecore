@@ -6,7 +6,7 @@ Starter theme for the Genesis Framework
 
 ThemeCore Wiki: https://github.com/bradpotter/themecore/wiki
 
-## Demo
+## Demo Website
 
 Demo link: http://themecore.com
 
