@@ -2,6 +2,10 @@
 
 Starter theme for the Genesis Framework
 
+## Documentaion
+
+ThemeCore Wiki: https://github.com/bradpotter/themecore/wiki
+
 ## Demo
 
 Demo link: http://themecore.com
