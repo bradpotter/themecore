@@ -46,6 +46,7 @@ nav {
 		padding: 22px 24px 22px 24px;
 		text-align: center;
 		visibility: visible;
+		outline: none;
 	}
 	
 	.sub-menu-toggle {
