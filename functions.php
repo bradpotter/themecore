@@ -45,6 +45,13 @@ function themecore_post_info_filter($post_info) {
 	return $post_info;
 }
 
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'themecore_footer_creds_filter');
+function themecore_footer_creds_filter( $creds ) {
+	$creds = 'Copyright [footer_copyright] &middot; <a href="http://www.themecore.com">ThemeCore</a> on <a href="http://www.studiopress.com">Genesis Framework</a> &middot; All Rights Reserved';
+	return $creds;
+}
+
 //* Include and add support for before content widgets
 require_once( CHILD_DIR . '/includes/before-content-widgets.php' );
 add_theme_support( 'genesis-before-content-widgets', 2 );
