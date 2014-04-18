@@ -312,6 +312,10 @@ nav {
 	/* Header Navigation Styles
 	----------------------------------------- */
 	
+	.site-header .genesis-nav-menu a {
+		border-bottom: 1px solid #eee;
+	}
+	
 	.site-header .genesis-nav-menu a:hover {
 		background-color: #fafafa;
 		color: #333;
@@ -320,10 +324,6 @@ nav {
 	.site-header .sub-menu,
 	.site-header .sub-menu a {
 		border: 0;
-	}
-	
-	.site-header .genesis-nav-menu a {
-		border-bottom: 1px solid #eee;
 	}
 	
 	.site-header .sub-menu a {
@@ -339,6 +339,10 @@ nav {
 	/* Primary Navigation Styles
 	----------------------------------------- */
 	
+	.nav-primary a {
+		border-bottom: 1px solid #444;
+	}
+	
 	.nav-primary a:hover {
 		background-color: #444;
 		color: #fff;
@@ -347,10 +351,6 @@ nav {
 	.nav-primary .sub-menu,
 	.nav-primary .sub-menu a {
 		border: 0;
-	}
-	
-	.nav-primary a {
-		border-bottom: 1px solid #444;
 	}
 	
 	.nav-primary .sub-menu a {
@@ -366,6 +366,10 @@ nav {
 	/* Secondary Navigation Styles
 	----------------------------------------- */
 	
+	.nav-secondary a {
+		border-bottom: 1px solid #eee;
+	}
+	
 	.nav-secondary a:hover {
 		background-color: #fafafa;
 		color: #333;
@@ -376,10 +380,6 @@ nav {
 		border: 0;
 	}
 
-	.nav-secondary a {
-		border-bottom: 1px solid #eee;
-	}
-	
 	.nav-secondary .sub-menu a {
 		background-color: #fbfbfb;
 		border-bottom: 1px solid #eee;
@@ -393,6 +393,10 @@ nav {
 	/* Tertiary Navigation Styles
 	----------------------------------------- */
 	
+	.nav-tertiary a {
+		border-bottom: 1px solid #333;
+	}
+	
 	.nav-tertiary a:hover {
 		background-color: #444;
 		color: #fff;
@@ -401,10 +405,6 @@ nav {
 	.nav-tertiary .sub-menu,
 	.nav-tertiary .sub-menu a {
 		border: 0;
-	}
-	
-	.nav-tertiary a {
-		border-bottom: 1px solid #333;
 	}
 	
 	.nav-tertiary .sub-menu a {
