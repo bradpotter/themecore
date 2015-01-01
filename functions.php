@@ -5,19 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'ThemeCore' );
 define( 'CHILD_THEME_URL', 'http://www.themecore.com/' );
-define( 'CHILD_THEME_VERSION', '2.0.2' );
-
-//* Add HTML5 markup structure
-add_theme_support( 'html5' );
-
-//* Add viewport meta tag for mobile browsers
-add_theme_support( 'genesis-responsive-viewport' );
-
-//* Add support for custom background
-add_theme_support( 'custom-background' );
-
-//* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+define( 'CHILD_THEME_VERSION', '2.1.2' );
 
 //* Enqueue Javascript files
 add_action( 'wp_enqueue_scripts', 'themecore_enqueue_scripts' );
@@ -32,6 +20,18 @@ function themecore_enqueue_styles() {
 	wp_enqueue_style( 'themecore-responsive-menu-style', get_stylesheet_directory_uri() . '/assets/css/responsive-menu.css', array(), '1.0.0' );
 	wp_enqueue_style( 'dashicons' );
 }
+
+//* Add HTML5 markup structure
+add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+
+//* Add viewport meta tag for mobile browsers
+add_theme_support( 'genesis-responsive-viewport' );
+
+//* Add support for custom background
+add_theme_support( 'custom-background' );
+
+//* Add support for 3-column footer widgets
+add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Add new image sizes
 add_image_size( 'Slider-Large', 1080, 652, TRUE );
@@ -52,17 +52,9 @@ function themecore_footer_creds_filter( $creds ) {
 	return $creds;
 }
 
-//* Include and add support for before content widgets
-require_once( CHILD_DIR . '/includes/before-content-widgets.php' );
-add_theme_support( 'genesis-before-content-widgets', 2 );
-
-//* Include and add support for after content widgets
-require_once( CHILD_DIR . '/includes/after-content-widgets.php' );
-add_theme_support( 'genesis-after-content-widgets', 2 );
-
 //* Include and hook tertiary navigation menu
 require_once( CHILD_DIR . '/includes/tertiary-navigation-menu.php' );
 add_action( 'genesis_before_footer', 'genesis_do_subnavtwo' );
 
-// Register Genesis Menus
+//* Register Genesis Menus
 add_theme_support( 'genesis-menus', array( 'primary'   => __( 'Primary Navigation Menu', 'genesis' ), 'secondary' => __( 'Secondary Navigation Menu', 'genesis' ), 'tertiary' => __( 'Tertiary Navigation Menu', 'genesis' ), ) );

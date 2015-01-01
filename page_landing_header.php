@@ -26,6 +26,7 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 //* Remove navigation
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+remove_action( 'genesis_before_footer', 'genesis_do_subnavtwo' );
 
 //* Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );

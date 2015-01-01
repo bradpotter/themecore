@@ -31,6 +31,7 @@ remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 //* Remove navigation
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+remove_action( 'genesis_before_footer', 'genesis_do_subnavtwo' );
 
 //* Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );

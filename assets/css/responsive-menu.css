@@ -1,3 +1,6 @@
+/* @override 
+	http://themecore.com/wp-content/themes/themecore-two/assets/css/responsive-menu.css?ver=1.0.0 */
+
 /* Desktop Navigation
 --------------------------------------------- */
 
@@ -24,12 +27,31 @@ nav {
 	nav {
 		display: block !important;
 	}
+
 }
 
 @media only screen and (max-width: 767px) {
 
 	
-	/* Menu Toggle Defaults
+	/* Reset Menus
+	----------------------------------------- */
+
+	.nav-primary .wrap,
+	.nav-secondary .wrap,
+	.nav-tertiary .wrap {
+		padding: 0;	
+	}
+
+	.site-header .genesis-nav-menu .sub-menu {
+		border-top: 0;
+	}
+	
+	.site-header .genesis-nav-menu .sub-menu .sub-menu {
+		margin-top: 0;
+	}
+
+	
+	/* Default Menu Toggle Styles
 	----------------------------------------- */
 	
 	.menu-toggle {
@@ -43,20 +65,21 @@ nav {
 		line-height: 1;
 		margin: 0 auto;
 		overflow: hidden;
-		padding: 22px 24px 22px 24px;
+		padding: 20px 20px 20px 20px;
 		text-align: center;
 		visibility: visible;
 		outline: none;
 	}
 	
 	.sub-menu-toggle {
+		padding: 18px 20px 18px 20px;
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
 	
 	.sub-menu .sub-menu-toggle {
-		padding: 21px 24px 21px 24px;
+		padding: 17px 20px 17px 20px;
 	}
 	
 	button.menu-toggle,
@@ -68,7 +91,7 @@ nav {
 		content: "\f333";
 		display: inline-block;
 		font-family: 'dashicons';
-		font-size: 28px;
+		font-size: 24px;
 		font-weight: normal;
 		line-height: 1;
 		margin: 0;
@@ -88,7 +111,7 @@ nav {
 		background-color: #fff;
 		border-bottom: 1px solid #eee;
 		border-top: 1px solid #eee;
-		color: #999;
+		color: #ccc;
 	}
 	
 	.menu-toggle.header-toggle:hover {
@@ -103,7 +126,7 @@ nav {
 	.menu-toggle.primary-toggle {
 		background-color: #333;
 		border-bottom: 1px solid #444;
-		color: #999;
+		color: #ccc;
 	}
 	
 	.menu-toggle.primary-toggle:hover {
@@ -118,7 +141,7 @@ nav {
 	.menu-toggle.secondary-toggle {
 		background-color: #fff;
 		border-bottom: 1px solid #eee;
-		color: #999;
+		color: #ccc;
 	}
 	
 	.menu-toggle.secondary-toggle:hover {
@@ -131,9 +154,9 @@ nav {
 	----------------------------------------- */
 	
 	.menu-toggle.tertiary-toggle {
-		background-color: #222;
-		border-bottom: 1px solid #333;
-		color: #999;
+		background-color: #2e2e2e;
+		border-bottom: 1px solid #444;
+		color: #ccc;
 	}
 	
 	.menu-toggle.tertiary-toggle:hover {
@@ -142,7 +165,7 @@ nav {
 	}
 
 	
-	/* Sub Menu Toggle Defaults
+	/* Default Sub Menu Toggle Styles
 	----------------------------------------- */
 	
 	.sub-menu-toggle:before {
@@ -151,7 +174,7 @@ nav {
 		display: inline-block;
 		font-family: 'dashicons';
 		font-size: 20px;
-		font-weight: bold;
+		font-weight: normal;
 		line-height: 1;
 		margin: 0;
 		vertical-align: top;
@@ -167,11 +190,11 @@ nav {
 	----------------------------------------- */
 	
 	.nav-header .sub-menu-toggle {
-		background-color: #fafafa;
+		background: transparent;
 	}
 	
 	.nav-header .sub-menu-toggle:hover {
-		background-color: #eee;
+		background-color: #f7f7f7;
 	}
 	
 	.nav-header .sub-menu-toggle:before {
@@ -191,7 +214,7 @@ nav {
 	----------------------------------------- */
 	
 	.nav-primary .sub-menu-toggle {
-		background-color: #3a3a3a;
+		background: transparent;
 	}
 	
 	.nav-primary .sub-menu-toggle:hover {
@@ -215,11 +238,11 @@ nav {
 	----------------------------------------- */
 	
 	.nav-secondary .sub-menu-toggle {
-		background-color: #fafafa;
+		background: transparent;
 	}
 	
 	.nav-secondary .sub-menu-toggle:hover {
-		background-color: #eee;
+		background-color: #f7f7f7;
 	}
 	
 	.nav-secondary .sub-menu-toggle:before {
@@ -239,7 +262,7 @@ nav {
 	----------------------------------------- */
 	
 	.nav-tertiary .sub-menu-toggle {
-		background-color: #3a3a3a;
+		background: transparent;
 	}
 	
 	.nav-tertiary .sub-menu-toggle:hover {
@@ -259,7 +282,7 @@ nav {
 	}
 
 	
-	/* Navigation Defaults
+	/* Default Navigation Styles
 	----------------------------------------- */
 	
 	nav {
@@ -291,7 +314,7 @@ nav {
 
 	.genesis-nav-menu .sub-menu a {
 		border-left: 0;
-		padding: 24px;
+		padding: 20px;
 		position: relative;
 		width: auto;
 	}
@@ -318,7 +341,6 @@ nav {
 	
 	.site-header .genesis-nav-menu a:hover {
 		background-color: #fafafa;
-		color: #333;
 	}
 	
 	.site-header .sub-menu,
@@ -327,12 +349,12 @@ nav {
 	}
 	
 	.site-header .sub-menu a {
-		background-color: #fbfbfb;
+		background-color: #fcfcfc;
 		border-bottom: 1px solid #eee;
 	}
 	
-	.site-header .current-menu-item > a {
-		color: #333;
+	.site-header .sub-menu a:hover {
+		background-color: #fafafa;
 	}
 	
 	
@@ -345,7 +367,6 @@ nav {
 	
 	.nav-primary a:hover {
 		background-color: #444;
-		color: #fff;
 	}
 	
 	.nav-primary .sub-menu,
@@ -358,10 +379,9 @@ nav {
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-primary .current-menu-item > a {
-		color: #fff;
+	.nav-primary .sub-menu a:hover {
+		background-color: #444;
 	}
-	
 	
 	/* Secondary Navigation Styles
 	----------------------------------------- */
@@ -372,7 +392,6 @@ nav {
 	
 	.nav-secondary a:hover {
 		background-color: #fafafa;
-		color: #333;
 	}
 	
 	.nav-secondary .sub-menu,
@@ -381,14 +400,13 @@ nav {
 	}
 
 	.nav-secondary .sub-menu a {
-		background-color: #fbfbfb;
+		background-color: #fcfcfc;
 		border-bottom: 1px solid #eee;
 	}
 	
-	.nav-secondary .current-menu-item > a {
-		color: #333;
+	.nav-secondary .sub-menu a:hover {
+		background-color: #fafafa;
 	}
-
 	
 	/* Tertiary Navigation Styles
 	----------------------------------------- */
@@ -399,7 +417,6 @@ nav {
 	
 	.nav-tertiary a:hover {
 		background-color: #444;
-		color: #fff;
 	}
 	
 	.nav-tertiary .sub-menu,
@@ -412,8 +429,8 @@ nav {
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-tertiary .current-menu-item > a {
-		color: #fff;
-	}	
+	.nav-tertiary .sub-menu a:hover {
+		background-color: #444;
+	}
 
 }
