@@ -34,9 +34,24 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Add new image sizes
-add_image_size( 'Slider-Large', 1080, 652, TRUE );
-add_image_size( 'Slider-Medium', 680, 410, TRUE );
-add_image_size( 'Slider-Small', 280, 169, TRUE );
+if ( function_exists( 'add_image_size' ) ) {
+add_image_size( 'custom-large', 1100, 619, TRUE );
+add_image_size( 'custom-medium', 690, 388, TRUE );
+add_image_size( 'custom-small', 300, 169, TRUE );
+}
+
+//* Make new image sizes available in WordPress Uploader
+add_filter('image_size_names_choose', 'themecore_image_sizes');
+function themecore_image_sizes($sizes) {
+	$addsizes = array(
+		'custom-large' => __('Custom Large'),
+		'custom-medium' => __('Custom Medium'),
+		'custom-small' => __('Custom Small')
+	);
+
+$newsizes = array_merge($sizes, $addsizes);
+	return $newsizes;
+}
 
 //* Customize the entry meta in the entry header
 add_filter( 'genesis_post_info', 'themecore_post_info_filter' );
