@@ -681,6 +681,10 @@ th {
 	font-size: 36px;
 }
 
+.page .content .entry-title {
+	margin-bottom: 24px;
+}
+
 .entry-title a,
 .sidebar .widget-title a {
 	color: #333;
@@ -798,7 +802,7 @@ img.alignright,
 --------------------------------------------- */
 
 .featured-content .entry {
-	border-bottom: 2px solid #f5f5f5;
+	border-bottom: 1px dashed #ddd;
 	margin-bottom: 20px;
 	padding: 0 0 24px;
 }
