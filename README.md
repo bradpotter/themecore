@@ -14,7 +14,7 @@ Github project link: https://github.com/bradpotter/themecore
 
 1. Add additional page templates
 
-2. Create a front-page layout samples
+2. Create front-page layout samples
 
 3. Setup and test with Theme Customizer plugin
 
