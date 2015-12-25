@@ -2,7 +2,7 @@
 
 add_action( 'genesis_before_footer', 'themecore_do_footernav' );
 /**
- * Echo the "Footer Navigation" menu.
+ * Echo the "Footer Navigation" menu
  *
  * @author Brad Potter
  *
