@@ -15,6 +15,8 @@
  * 	  opacity: 1;
  *  }
  *
+ * Based on code from the StudioPress Genesis Framework 2.2
+ *
 */
 
 var genesis_drop_down_menu = ( function( $ ) {
