@@ -1,14 +1,43 @@
 ( function( window, $, undefined ) {
 	'use strict';
 
-	$( '.nav-header' ).before( '<button class="menu-toggle header-toggle" role="button" aria-pressed="false"></button>' ); // Add toggle to header menu
-	$( '.nav-primary' ).before( '<button class="menu-toggle primary-toggle" role="button" aria-pressed="false"></button>' ); // Add toggle to primary menu
-	$( '.nav-secondary' ).before( '<button class="menu-toggle secondary-toggle" role="button" aria-pressed="false"></button>' ); // Add toggle to secondary menu
-	$( '.nav-tertiary' ).before( '<button class="menu-toggle tertiary-toggle" role="button" aria-pressed="false"></button>' ); // Add toggle to tertiary menu
-	$( 'nav .sub-menu' ).before( '<button class="sub-menu-toggle" role="button" aria-pressed="false"></button>' ); // Add toggles to all sub menus
+	$( '.nav-header' ).before( '<button class="menu-toggle header-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to header menu
+	$( '.nav-primary' ).before( '<button id="genesis-primary-mobile" class="menu-toggle primary-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to primary menu
+	$( '.nav-secondary' ).before( '<button id="genesis-secondary-mobile" class="menu-toggle secondary-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to secondary menu
+	$( '.nav-footer' ).before( '<button id="genesis-footer-mobile" class="menu-toggle footer-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to footer menu
+	$( 'nav .sub-menu' ).before( '<button class="sub-menu-toggle" role="button" aria-pressed="false"><span class="screen-reader-text">Submenu</span></button>' ); // Add toggles to all sub menus
 
-	// Show/hide the navigation
+	// Change skip link when loading below defined width
+	$(window).load(function() {
+		if(window.innerWidth < 768) {
+			
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-primary"]' ).attr('href', '#genesis-primary-mobile');
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-secondary"]' ).attr('href', '#genesis-secondary-mobile');
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-footer"]' ).attr('href', '#genesis-footer-mobile');
+		}	
+	});
+
+	// Change skip link and reset menu on resize
+	$(window).resize(function() {
+		if(window.innerWidth < 768) {
+			
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-primary"]' ).attr('href', '#genesis-primary-mobile');
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-secondary"]' ).attr('href', '#genesis-secondary-mobile');
+			$( 'ul.genesis-skip-link a[href="#genesis-nav-footer"]' ).attr('href', '#genesis-footer-mobile');
+
+		} else if(window.innerWidth > 768) {
+
+			$( 'ul.genesis-skip-link a[href="#genesis-primary-mobile"]' ).attr('href', '#genesis-nav-primary');
+			$( 'ul.genesis-skip-link a[href="#genesis-secondary-mobile"]' ).attr('href', '#genesis-nav-secondary');
+			$( 'ul.genesis-skip-link a[href="#genesis-footer-mobile"]' ).attr('href', '#genesis-nav-footer');
+			$( '.menu-toggle, .sub-menu-toggle' ).removeClass( 'activated' ).attr( 'aria-expanded', false ).attr( 'aria-pressed', false );
+			$( 'nav, .sub-menu' ).attr( 'style', '' );
+		}
+	});
+
+	// Show or hide the menu
 	$( '.menu-toggle, .sub-menu-toggle' ).on( 'click', function() {
+		
 		var $this = $( this );
 		$this.attr( 'aria-pressed', function( index, value ) {
 			return 'false' === value ? 'true' : 'false';

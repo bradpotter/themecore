@@ -9,6 +9,7 @@ Demo link: http://themecore.com
 ## GitHub
 
 Github project link: https://github.com/bradpotter/themecore
+<<<<<<< Updated upstream
 
 ## Goals
 
@@ -21,3 +22,5 @@ Github project link: https://github.com/bradpotter/themecore
 ## Mission
 
 Make sure free and/or low cost quality products are available for the Genesis Community
+=======
+>>>>>>> Stashed changes

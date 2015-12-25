@@ -19,7 +19,7 @@ nav {
 /* Navigation Toggles (Media Queries)
 --------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 	nav {
 		display: block !important;
@@ -27,7 +27,7 @@ nav {
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
 	
 	/* Reset Menus
@@ -35,7 +35,7 @@ nav {
 
 	.nav-primary .wrap,
 	.nav-secondary .wrap,
-	.nav-tertiary .wrap {
+	.nav-footer .wrap {
 		padding: 0;	
 	}
 
@@ -58,7 +58,8 @@ nav {
 	.menu-toggle,
 	.sub-menu-toggle {
 		display: block;
-		font-size: 20px;
+		font-size: 17px;
+		font-size: 1.7rem;
 		line-height: 1;
 		margin: 0 auto;
 		overflow: hidden;
@@ -84,19 +85,21 @@ nav {
 		background-color: transparent;
 	}
 
-	.menu-toggle:before {
+	.menu-toggle:after {
 		content: "\f333";
+		content: "\f347";
 		display: inline-block;
 		font-family: 'dashicons';
 		font-size: 24px;
+		font-size: 2.4rem;
 		font-weight: normal;
-		line-height: 1;
-		margin: 0;
+		line-height: .75;
+		margin: 0 0 0 5px;
 		vertical-align: top;
 		-webkit-font-smoothing: antialiased;
 	}
 
-	.menu-toggle.activated:before {
+	.menu-toggle.activated:after {
 		content: "\f343";
 	}
 	
@@ -111,7 +114,8 @@ nav {
 		color: #ccc;
 	}
 	
-	.menu-toggle.header-toggle:hover {
+	.menu-toggle.header-toggle:hover,
+	.menu-toggle.header-toggle:focus {
 		background-color: #fafafa;
 		color: #666;
 	}
@@ -126,7 +130,8 @@ nav {
 		color: #ccc;
 	}
 	
-	.menu-toggle.primary-toggle:hover {
+	.menu-toggle.primary-toggle:hover,
+	.menu-toggle.primary-toggle:focus {
 		background-color: #3a3a3a;
 		color: #fff;
 	}
@@ -141,22 +146,24 @@ nav {
 		color: #ccc;
 	}
 	
-	.menu-toggle.secondary-toggle:hover {
+	.menu-toggle.secondary-toggle:hover,
+	.menu-toggle.secondary-toggle:focus {
 		background-color: #fafafa;
 		color: #666;
 	}
 	
 
-	/* Tertiary Menu Toggle Styles
+	/* Footer Menu Toggle Styles
 	----------------------------------------- */
 	
-	.menu-toggle.tertiary-toggle {
+	.menu-toggle.footer-toggle {
 		background-color: #2e2e2e;
 		border-bottom: 1px solid #444;
 		color: #ccc;
 	}
 	
-	.menu-toggle.tertiary-toggle:hover {
+	.menu-toggle.footer-toggle:hover,
+	.menu-toggle.footer-toggle:focus {
 		background-color: #3a3a3a;
 		color: #fff;
 	}
@@ -171,6 +178,7 @@ nav {
 		display: inline-block;
 		font-family: 'dashicons';
 		font-size: 20px;
+		font-size: 2rem;
 		font-weight: normal;
 		line-height: 1;
 		margin: 0;
@@ -190,7 +198,8 @@ nav {
 		background: transparent;
 	}
 	
-	.nav-header .sub-menu-toggle:hover {
+	.nav-header .sub-menu-toggle:hover,
+	.nav-header .sub-menu-toggle:focus {
 		background-color: #f7f7f7;
 	}
 	
@@ -198,7 +207,8 @@ nav {
 		color: #aaa;
 	}
 	
-	.nav-header .sub-menu-toggle:hover:before {
+	.nav-header .sub-menu-toggle:hover:before,
+	.nav-header .sub-menu-toggle:focus:before {
 		color: #666;
 	}
 	
@@ -214,7 +224,8 @@ nav {
 		background: transparent;
 	}
 	
-	.nav-primary .sub-menu-toggle:hover {
+	.nav-primary .sub-menu-toggle:hover,
+	.nav-primary .sub-menu-toggle:focus {
 		background-color: #444;
 	}
 	
@@ -222,7 +233,8 @@ nav {
 		color: #666;
 	}
 		
-	.nav-primary .sub-menu-toggle:hover:before {
+	.nav-primary .sub-menu-toggle:hover:before,
+	.nav-primary .sub-menu-toggle:focus:before {
 		color: #fff;
 	}
 	
@@ -238,7 +250,8 @@ nav {
 		background: transparent;
 	}
 	
-	.nav-secondary .sub-menu-toggle:hover {
+	.nav-secondary .sub-menu-toggle:hover,
+	.nav-secondary .sub-menu-toggle:focus {
 		background-color: #f7f7f7;
 	}
 	
@@ -246,7 +259,8 @@ nav {
 		color: #aaa;
 	}
 	
-	.nav-secondary .sub-menu-toggle:hover:before {
+	.nav-secondary .sub-menu-toggle:hover:before,
+	.nav-secondary .sub-menu-toggle:focus:before {
 		color: #666;
 	}
 	
@@ -255,26 +269,28 @@ nav {
 	}
 	
 	
-	/* Tertiary Sub Menu Toggle Styles
+	/* Footer Sub Menu Toggle Styles
 	----------------------------------------- */
 	
-	.nav-tertiary .sub-menu-toggle {
+	.nav-footer .sub-menu-toggle {
 		background: transparent;
 	}
 	
-	.nav-tertiary .sub-menu-toggle:hover {
+	.nav-footer .sub-menu-toggle:hover,
+	.nav-footer .sub-menu-toggle:focus {
 		background-color: #444;
 	}
 	
-	.nav-tertiary .sub-menu-toggle:before {
+	.nav-footer .sub-menu-toggle:before {
 		color: #666;
 	}
 		
-	.nav-tertiary .sub-menu-toggle:hover:before {
+	.nav-footer .sub-menu-toggle:hover:before,
+	.nav-footer .sub-menu-toggle:focus:before {
 		color: #fff;
 	}
 	
-	.nav-tertiary .sub-menu-toggle.activated:before {
+	.nav-footer .sub-menu-toggle.activated:before {
 		color: #eee;
 	}
 
@@ -293,7 +309,8 @@ nav {
 		text-align: left;
 	}
 
-	.genesis-nav-menu .menu-item:hover {
+	.genesis-nav-menu .menu-item:hover,
+	.genesis-nav-menu .menu-item:focus {
 		position: relative;
 	}
 
@@ -336,21 +353,23 @@ nav {
 		border-bottom: 1px solid #eee;
 	}
 	
-	.site-header .genesis-nav-menu a:hover {
+	.site-header .genesis-nav-menu a:hover,
+	.site-header .genesis-nav-menu a:focus {
 		background-color: #fafafa;
 	}
 	
-	.site-header .sub-menu,
-	.site-header .sub-menu a {
+	.site-header .genesis-nav-menu .sub-menu,
+	.site-header .genesis-nav-menu .sub-menu a {
 		border: 0;
 	}
 	
-	.site-header .sub-menu a {
-		background-color: #fcfcfc;
+	.site-header .genesis-nav-menu .sub-menu a {
+		background-color: #fff;
 		border-bottom: 1px solid #eee;
 	}
 	
-	.site-header .sub-menu a:hover {
+	.site-header .genesis-nav-menu .sub-menu a:hover,
+	.site-header .genesis-nav-menu .sub-menu a:focus {
 		background-color: #fafafa;
 	}
 	
@@ -358,76 +377,82 @@ nav {
 	/* Primary Navigation Styles
 	----------------------------------------- */
 	
-	.nav-primary a {
+	.nav-primary .genesis-nav-menu a {
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-primary a:hover {
-		background-color: #444;
+	.nav-primary .genesis-nav-menu a:hover,
+	.nav-primary .genesis-nav-menu a:focus {
+		background-color: #383838;
 	}
 	
-	.nav-primary .sub-menu,
-	.nav-primary .sub-menu a {
+	.nav-primary .genesis-nav-menu .sub-menu,
+	.nav-primary .genesis-nav-menu .sub-menu a {
 		border: 0;
 	}
 	
-	.nav-primary .sub-menu a {
-		background-color: #383838;
+	.nav-primary .genesis-nav-menu .sub-menu a {
+		background-color: #333;
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-primary .sub-menu a:hover {
-		background-color: #444;
+	.nav-primary .genesis-nav-menu .sub-menu a:hover,
+	.nav-primary .genesis-nav-menu .sub-menu a:focus {
+		background-color: #383838;
 	}
 	
 	/* Secondary Navigation Styles
 	----------------------------------------- */
 	
-	.nav-secondary a {
+	.nav-secondary .genesis-nav-menu a {
 		border-bottom: 1px solid #eee;
 	}
 	
-	.nav-secondary a:hover {
+	.nav-secondary .genesis-nav-menu a:hover,
+	.nav-secondary .genesis-nav-menu a:focus {
 		background-color: #fafafa;
 	}
 	
-	.nav-secondary .sub-menu,
-	.nav-secondary .sub-menu a {
+	.nav-secondary .genesis-nav-menu .sub-menu,
+	.nav-secondary .genesis-nav-menu .sub-menu a {
 		border: 0;
 	}
 
-	.nav-secondary .sub-menu a {
-		background-color: #fcfcfc;
+	.nav-secondary .genesis-nav-menu .sub-menu a {
+		background-color: #fff;
 		border-bottom: 1px solid #eee;
 	}
 	
-	.nav-secondary .sub-menu a:hover {
+	.nav-secondary .genesis-nav-menu .sub-menu a:hover,
+	.nav-secondary .genesis-nav-menu .sub-menu a:focus {
 		background-color: #fafafa;
 	}
 	
-	/* Tertiary Navigation Styles
+	/* Footer Navigation Styles
 	----------------------------------------- */
 	
-	.nav-tertiary a {
-		border-bottom: 1px solid #333;
-	}
-	
-	.nav-tertiary a:hover {
-		background-color: #444;
-	}
-	
-	.nav-tertiary .sub-menu,
-	.nav-tertiary .sub-menu a {
-		border: 0;
-	}
-	
-	.nav-tertiary .sub-menu a {
-		background-color: #383838;
+	.nav-footer .genesis-nav-menu a {
 		border-bottom: 1px solid #444;
 	}
 	
-	.nav-tertiary .sub-menu a:hover {
-		background-color: #444;
+	.nav-footer .genesis-nav-menu a:hover,
+	.nav-footer .genesis-nav-menu a:focus {
+		background-color: #333;
+	}
+	
+	.nav-footer .genesis-nav-menu .sub-menu,
+	.nav-footer .genesis-nav-menu .sub-menu a {
+		border: 0;
+	}
+	
+	.nav-footer .genesis-nav-menu .sub-menu a {
+		background-color: #2e2e2e;
+		border-bottom: 1px solid #444;
+	}
+	
+	.nav-footer .genesis-nav-menu .sub-menu a:hover,
+	.nav-footer .genesis-nav-menu .sub-menu a:focus {
+		background-color: #333;
 	}
 
 }
