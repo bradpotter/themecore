@@ -1,6 +1,14 @@
 <?php
 
-//* Add skip link to secondary navigation
+/**
+ * Add accessibility
+ *
+ * @author Brad Potter
+ *
+ * @link http://www.bradpotter.com
+ */
+ 
+ // Add skip link to secondary navigation
 add_filter( 'genesis_attr_nav-secondary', 'themecore_add_nav_secondary_id' );
 function themecore_add_nav_secondary_id( $attributes ) {
 	$attributes['id'] = 'genesis-nav-secondary';
@@ -20,7 +28,7 @@ function themecore_add_nav_secondary_skip_link( $links ) {
 	return array_merge( $new_links, $links );
 }
 
-//* Add heading to secondary navigation
+// Add heading to secondary navigation
 add_filter( 'genesis_do_subnav', 'themecore_a11y_subnav_heading' );
 function themecore_a11y_subnav_heading( $nav_output ) {
 	
@@ -32,7 +40,7 @@ function themecore_a11y_subnav_heading( $nav_output ) {
 		return $heading . $nav_output;
 }
 
-//* Add skip link to footer navigation
+// Add skip link to footer navigation
 add_filter( 'genesis_attr_nav-footer', 'themecore_add_nav_footer_id' );
 function themecore_add_nav_footer_id( $attributes ) {
 	$attributes['id'] = 'genesis-nav-footer';
@@ -52,7 +60,7 @@ function themecore_add_nav_footer_skip_link( $links ) {
 	return array_merge( $new_links, $links );
 }
 
-//* Modify Read More link for accessibility
+// Modify Read More link for accessibility
 add_filter('excerpt_more', 'themecore_read_more_link');
 add_filter('the_content_more_link', 'themecore_read_more_link');
 add_filter( 'get_the_content_more_link', 'themecore_read_more_link' );
@@ -67,7 +75,7 @@ function themecore_read_more_link() {
 
 }
 
-//* Add Read More to manually made excertps
+// Add Read More to manually made excertps
 add_filter( 'get_the_excerpt', 'themecore_excerpt_more' );
 function themecore_excerpt_more( $excerpt ) {
 	
