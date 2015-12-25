@@ -109,10 +109,10 @@ if ( function_exists( 'add_image_size' ) ) {
 // Show new image sizes in WordPress Uploader
 function themecore_image_sizes($sizes) {
 	$addsizes = array(
-		'custom-large' => __('Custom Large'),
+		'custom-large'  => __('Custom Large'),
 		'custom-medium' => __('Custom Medium'),
-		'custom-small' => __('Custom Small'),
-		'custom-mini' => __('Custom Mini')
+		'custom-small'  => __('Custom Small'),
+		'custom-mini'   => __('Custom Mini')
 	);
 
 	$newsizes = array_merge($sizes, $addsizes);
