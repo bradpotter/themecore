@@ -34,7 +34,7 @@ function themecore_do_footernav() {
 
 add_filter( 'genesis_attr_nav-footer', 'themecore_attributes_nav_footernav' );
 /**
- * Add Attributes for Footer Navigation Menu
+ * Add attributes for Footer Navigation menu
  * 
  * @author Brad Potter
  * 
