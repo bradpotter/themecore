@@ -13,7 +13,7 @@ load_child_theme_textdomain( 'themecore', get_stylesheet_directory() . '/languag
 
 add_action( 'genesis_setup', 'themecore_setup', 15 );
 /**
- * Setup ThemeCore theme
+ * Setup ThemeCore Theme
  *
  * @since 2.2.5
  */
