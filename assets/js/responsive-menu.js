@@ -1,11 +1,14 @@
 ( function( window, $, undefined ) {
 	'use strict';
 
-	$( '.nav-header' ).before( '<button class="menu-toggle header-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to header menu
-	$( '.nav-primary' ).before( '<button id="genesis-primary-mobile" class="menu-toggle primary-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to primary menu
-	$( '.nav-secondary' ).before( '<button id="genesis-secondary-mobile" class="menu-toggle secondary-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to secondary menu
-	$( '.nav-footer' ).before( '<button id="genesis-footer-mobile" class="menu-toggle footer-toggle" role="button" aria-pressed="false">Menu</button>' ); // Add toggle to footer menu
-	$( 'nav .sub-menu' ).before( '<button class="sub-menu-toggle" role="button" aria-pressed="false"><span class="screen-reader-text">Submenu</span></button>' ); // Add toggles to all sub menus
+	// Add toggle to menus
+	$( '.nav-header' ).before( '<button class="menu-toggle header-toggle" role="button" aria-pressed="false">Menu</button>' );
+	$( '.nav-primary' ).before( '<button id="genesis-primary-mobile" class="menu-toggle primary-toggle" role="button" aria-pressed="false">Menu</button>' );
+	$( '.nav-secondary' ).before( '<button id="genesis-secondary-mobile" class="menu-toggle secondary-toggle" role="button" aria-pressed="false">Menu</button>' );
+	$( '.nav-footer' ).before( '<button id="genesis-footer-mobile" class="menu-toggle footer-toggle" role="button" aria-pressed="false">Menu</button>' );
+	
+	// Add toggles to sub menus
+	$( 'nav .sub-menu' ).before( '<button class="sub-menu-toggle" role="button" aria-pressed="false"><span class="screen-reader-text">Submenu</span></button>' );
 
 	// Change skip link when loading below defined width
 	$(window).load(function() {
