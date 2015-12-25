@@ -8,7 +8,7 @@
  * @link http://www.bradpotter.com
  */
  
- // Add skip link to secondary navigation
+ // Add skip link to Secondary Navigation
 add_filter( 'genesis_attr_nav-secondary', 'themecore_add_nav_secondary_id' );
 function themecore_add_nav_secondary_id( $attributes ) {
 	$attributes['id'] = 'genesis-nav-secondary';
@@ -28,7 +28,7 @@ function themecore_add_nav_secondary_skip_link( $links ) {
 	return array_merge( $new_links, $links );
 }
 
-// Add heading to secondary navigation
+// Add heading to Secondary Navigation
 add_filter( 'genesis_do_subnav', 'themecore_a11y_subnav_heading' );
 function themecore_a11y_subnav_heading( $nav_output ) {
 	
