@@ -119,10 +119,35 @@ function themecore_enqueue_scripts() {
 	wp_enqueue_style( 'dashicons' );
 }
 
+<<<<<<< HEAD
 add_filter( 'genesis_post_info', 'themecore_post_info_filter' );
 /**
  * Customize entry meta in the entry header.
  */
+=======
+// Add new image sizes
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'custom-large', 1100, 619, TRUE );
+	add_image_size( 'custom-medium', 690, 388, TRUE );
+	add_image_size( 'custom-small', 300, 169, TRUE );
+	add_image_size( 'custom-mini', 240, 135, TRUE );
+}
+
+// Show new image sizes in WordPress Uploader
+function themecore_image_sizes($sizes) {
+	$addsizes = array(
+		'custom-large'  => __('Custom Large'),
+		'custom-medium' => __('Custom Medium'),
+		'custom-small'  => __('Custom Small'),
+		'custom-mini'   => __('Custom Mini')
+	);
+
+	$newsizes = array_merge($sizes, $addsizes);
+		return $newsizes;
+}
+
+// Modify entry meta in the entry header
+>>>>>>> origin/master
 function themecore_post_info_filter($post_info) {
 	$post_info = '[post_date] [post_author_posts_link] [post_comments] [post_edit]';
 	return $post_info;
