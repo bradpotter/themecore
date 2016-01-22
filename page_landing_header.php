@@ -41,3 +41,4 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 
 //* Run the Genesis loop
 genesis();
+
