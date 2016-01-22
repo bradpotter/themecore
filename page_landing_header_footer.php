@@ -33,4 +33,3 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 
 //* Run the Genesis loop
 genesis();
-
