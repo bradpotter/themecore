@@ -136,3 +136,8 @@ function themecore_footer_creds_filter( $creds ) {
 	$creds = 'Copyright [footer_copyright] &middot; <a href="http://www.themecore.com">ThemeCore</a> on <a href="http://www.studiopress.com">Genesis Framework</a> &middot; All Rights Reserved';
 	return $creds;
 }
+
+/**
+ * Load Genesis
+ */
+require_once get_template_directory() . '/lib/init.php';
