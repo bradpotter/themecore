@@ -67,10 +67,10 @@ add_filter( 'get_the_content_more_link', 'themecore_read_more_link' );
 function themecore_read_more_link() {
 	
 	if ( genesis_a11y() ) {
-		return ' . . . <a class="more-link" href="' . get_permalink() . '">" . __( 'Read More<span class=\"screen-reader-text\"> about ' . the_title_attribute( 'echo=0' ) . '</span></a>', 'themecore' );
+		return ' . . . <a class="more-link" href="' . get_permalink() . '">' . __( 'Read More<span class=\"screen-reader-text\"> about ' . the_title_attribute( 'echo=0' ) . '</span></a>', 'themecore' );
 
 	} else {
-		return ' . . . <a class="more-link" href="' . get_permalink() . '">" . __('[Read More]', 'themecore' ) . '</a>';
+		return ' . . . <a class="more-link" href="' . get_permalink() . '">' . __('[Read More]', 'themecore' ) . '</a>';
 	}
 
 }
@@ -82,7 +82,7 @@ function themecore_excerpt_more( $excerpt ) {
 	$excerpt_more = '';
 	
 	if ( has_excerpt() ) {
-		$excerpt_more = ' . . . <a class="more-link" href="' . get_permalink() . '">" . __( 'Read More<span class=\"screen-reader-text\"> about ' . the_title_attribute( 'echo=0' ) . '</span></a>', 'themecore' );
+		$excerpt_more = ' . . . <a class="more-link" href="' . get_permalink() . '">' . __( 'Read More<span class=\"screen-reader-text\"> about ' . the_title_attribute( 'echo=0' ) . '</span></a>', 'themecore' );
 	}
 		
 	return $excerpt . $excerpt_more;
